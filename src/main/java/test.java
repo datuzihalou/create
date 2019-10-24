@@ -1,11 +1,10 @@
-import netscape.javascript.JSObject;
-import sun.org.mozilla.javascript.internal.json.JsonParser;
+
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.HashMap;
-import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
+
 
 public class test {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
@@ -17,6 +16,7 @@ public class test {
         testProxy1.say("");
         testProxy1.smile();
         method.invoke(testProxy,"quniama");
+        AtomicInteger a = new AtomicInteger();
     }
 
 }
